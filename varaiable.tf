@@ -6,7 +6,7 @@ variable "Subnet"{
     default = "10.0.1.0/24"
 }
 
-
+#test
 output Ansible_Master_Server{
     value = [aws_instance.Ansible-Master.public_ip,aws_instance.Ansible-Master.private_ip]
 }
