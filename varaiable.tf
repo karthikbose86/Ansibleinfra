@@ -6,13 +6,6 @@ variable "Subnet"{
     default = "10.0.1.0/24"
 }
 
-variable "AccessKeyID"{
-    default = "AKIATC6AQYSJXK5F3UH5"
-}
-
-variable "SecretAccessKey"{
-    default = "0VJmB0+bTKQpl0mAWpsYL4QoP2qIGin8Lwx2BtHi"
-}
 
 output Ansible_Master_Server{
     value = [aws_instance.Ansible-Master.public_ip,aws_instance.Ansible-Master.private_ip]
